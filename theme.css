@@ -22,7 +22,7 @@ body.theme-dark {
   --background-modifier-hover: rgba(189, 189, 189, 0.09);
   --background-modifier-border: #4b4b4b;
   --background-modifier-border-hover: #616161;
-  --background-modifier-border-focus: #98bcbd;
+  --background-modifier-border-focus: #e17899;
   --background-modifier-form-field: #333233;
   --background-modifier-error: #730b00;
   --background-modifier-success: #006f00;
@@ -36,9 +36,9 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(223, 188, 114, 0.38);
   --interactive-normal: #4b4b4b;
   --interactive-hover: #565656;
-  --color-accent: #98bcbd;
-  --color-accent-1: #a8cbcc;
-  --color-accent-2: #bcdede;
+  --color-accent: #e17899;
+  --color-accent-1: #e09b99;
+  --color-accent-2: #ffbfbd;
   --color-red: #e09b99;
   --color-red-rgb: 224, 155, 153;
   --color-orange: #e19972;
@@ -47,22 +47,24 @@ body.theme-dark {
   --color-yellow-rgb: 223, 188, 114;
   --color-green: #98bc99;
   --color-green-rgb: 152, 188, 153;
-  --color-cyan: #98bcbd;
-  --color-cyan-rgb: 152, 188, 189;
-  --color-blue: #98bede;
-  --color-blue-rgb: 152, 190, 222;
+  --color-cyan: #6fbcbd;
+  --color-cyan-rgb: 111, 188, 189;
+  --color-blue: #719cdf;
+  --color-blue-rgb: 113, 156, 223;
   --color-purple: #999abd;
   --color-purple-rgb: 153, 154, 189;
   --color-pink: #e17899;
   --color-pink-rgb: 225, 120, 153;
   --seoul-title: #dfdebd;
-  --seoul-heading: #e0bebc;
-  --seoul-comment: #98bc99;
+  --seoul-heading: #ffbfbd;
+  --seoul-comment: #719872;
+  --seoul-link: #98bede;
+  --seoul-strong: #ffde99;
   --seoul-number: #ffde99;
   --seoul-function: #dfdebd;
-  --seoul-operator: #dedd99;
+  --seoul-operator: #dfdebd;
   --seoul-tag-bg: rgba(152, 188, 153, 0.09);
-  --seoul-active-bg: rgba(152, 188, 189, 0.12);
+  --seoul-active-bg: rgba(111, 188, 189, 0.12);
 }
 
 body.theme-light {
@@ -86,7 +88,7 @@ body.theme-light {
   --background-modifier-hover: rgba(51, 50, 51, 0.06);
   --background-modifier-border: #bfbfbf;
   --background-modifier-border-hover: #999999;
-  --background-modifier-border-focus: #007173;
+  --background-modifier-border-focus: #bf2172;
   --background-modifier-form-field: #e9e9e9;
   --background-modifier-error: #e0bebc;
   --background-modifier-success: #bcddbd;
@@ -100,9 +102,9 @@ body.theme-light {
   --text-highlight-bg-active: rgba(223, 188, 114, 0.65);
   --interactive-normal: #e9e9e9;
   --interactive-hover: #f1f1f1;
-  --color-accent: #007173;
-  --color-accent-1: #007299;
-  --color-accent-2: #007173;
+  --color-accent: #bf2172;
+  --color-accent-1: #9b1d72;
+  --color-accent-2: #9b1d72;
   --color-red: #9b1300;
   --color-red-rgb: 155, 19, 0;
   --color-orange: #9a7200;
@@ -113,18 +115,20 @@ body.theme-light {
   --color-green-rgb: 77, 112, 78;
   --color-cyan: #007173;
   --color-cyan-rgb: 0, 113, 115;
-  --color-blue: #007299;
-  --color-blue-rgb: 0, 114, 153;
+  --color-blue: #0074be;
+  --color-blue-rgb: 0, 116, 190;
   --color-purple: #795c79;
   --color-purple-rgb: 121, 92, 121;
-  --color-pink: #9b1d72;
-  --color-pink-rgb: 155, 29, 114;
+  --color-pink: #bf2172;
+  --color-pink-rgb: 191, 33, 114;
   --seoul-title: #61603f;
-  --seoul-heading: #875f5e;
+  --seoul-heading: #bf2172;
   --seoul-comment: #4d704e;
-  --seoul-number: #9a7372;
+  --seoul-link: #007173;
+  --seoul-strong: #bf2172;
+  --seoul-number: #9a7200;
   --seoul-function: #727100;
-  --seoul-operator: #9a7372;
+  --seoul-operator: #727100;
   --seoul-tag-bg: rgba(77, 112, 78, 0.07);
   --seoul-active-bg: rgba(0, 113, 115, 0.09);
 }
@@ -160,9 +164,9 @@ body.theme-light {
   --inline-title-color: var(--seoul-heading);
   --inline-title-size: 2.1em;
   --inline-title-weight: 600;
-  --bold-color: var(--seoul-title);
-  --italic-color: var(--color-purple);
-  --link-color: var(--color-cyan);
+  --bold-color: var(--seoul-strong);
+  --italic-color: var(--color-orange);
+  --link-color: var(--seoul-link);
   --link-color-hover: var(--color-blue);
   --link-external-color: var(--color-blue);
   --link-external-color-hover: var(--color-cyan);
@@ -246,6 +250,11 @@ body.theme-light {
 }
 
 .markdown-rendered a { text-underline-offset: 0.18em; }
+
+.markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  color: var(--color-cyan);
+}
 
 .markdown-rendered pre {
   border: 1px solid var(--background-modifier-border);
