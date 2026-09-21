@@ -1,0 +1,287 @@
+/* Seoul256 for Obsidian. Palette adapted from Junegunn Choi's seoul256.vim.
+   See LICENSE for the original palette's MIT license. */
+
+body.theme-dark {
+  color-scheme: dark;
+  --color-base-00: #3f3f3f;
+  --color-base-05: #3a393a;
+  --color-base-10: #333233;
+  --color-base-20: #4b4b4b;
+  --color-base-25: #565656;
+  --color-base-30: #616161;
+  --color-base-35: #6b6b6b;
+  --color-base-40: #757575;
+  --color-base-50: #999872;
+  --color-base-60: #bdbdbd;
+  --color-base-70: #c8c8c8;
+  --color-base-100: #d9d9d9;
+  --background-primary: #3f3f3f;
+  --background-primary-alt: #333233;
+  --background-secondary: #333233;
+  --background-secondary-alt: #252525;
+  --background-modifier-hover: rgba(189, 189, 189, 0.09);
+  --background-modifier-border: #4b4b4b;
+  --background-modifier-border-hover: #616161;
+  --background-modifier-border-focus: #98bcbd;
+  --background-modifier-form-field: #333233;
+  --background-modifier-error: #730b00;
+  --background-modifier-success: #006f00;
+  --background-modifier-cover: rgba(23, 23, 23, 0.65);
+  --text-normal: #d9d9d9;
+  --text-muted: #bdbdbd;
+  --text-faint: #999889;
+  --text-on-accent: #252525;
+  --text-selection: rgba(0, 113, 115, 0.65);
+  --text-highlight-bg: rgba(223, 188, 114, 0.22);
+  --text-highlight-bg-active: rgba(223, 188, 114, 0.38);
+  --interactive-normal: #4b4b4b;
+  --interactive-hover: #565656;
+  --color-accent: #98bcbd;
+  --color-accent-1: #a8cbcc;
+  --color-accent-2: #bcdede;
+  --color-red: #e09b99;
+  --color-red-rgb: 224, 155, 153;
+  --color-orange: #e19972;
+  --color-orange-rgb: 225, 153, 114;
+  --color-yellow: #dfbc72;
+  --color-yellow-rgb: 223, 188, 114;
+  --color-green: #98bc99;
+  --color-green-rgb: 152, 188, 153;
+  --color-cyan: #98bcbd;
+  --color-cyan-rgb: 152, 188, 189;
+  --color-blue: #98bede;
+  --color-blue-rgb: 152, 190, 222;
+  --color-purple: #999abd;
+  --color-purple-rgb: 153, 154, 189;
+  --color-pink: #e17899;
+  --color-pink-rgb: 225, 120, 153;
+  --seoul-title: #dfdebd;
+  --seoul-heading: #e0bebc;
+  --seoul-comment: #98bc99;
+  --seoul-number: #ffde99;
+  --seoul-function: #dfdebd;
+  --seoul-operator: #dedd99;
+  --seoul-tag-bg: rgba(152, 188, 153, 0.09);
+  --seoul-active-bg: rgba(152, 188, 189, 0.12);
+}
+
+body.theme-light {
+  color-scheme: light;
+  --color-base-00: #e1e1e1;
+  --color-base-05: #d9d9d9;
+  --color-base-10: #d1d0d1;
+  --color-base-20: #c8c8c8;
+  --color-base-25: #bfbfbf;
+  --color-base-30: #b0b0b0;
+  --color-base-35: #999999;
+  --color-base-40: #858585;
+  --color-base-50: #757575;
+  --color-base-60: #6b6b6b;
+  --color-base-70: #616161;
+  --color-base-100: #333233;
+  --background-primary: #e1e1e1;
+  --background-primary-alt: #d9d9d9;
+  --background-secondary: #d1d0d1;
+  --background-secondary-alt: #c8c8c8;
+  --background-modifier-hover: rgba(51, 50, 51, 0.06);
+  --background-modifier-border: #bfbfbf;
+  --background-modifier-border-hover: #999999;
+  --background-modifier-border-focus: #007173;
+  --background-modifier-form-field: #e9e9e9;
+  --background-modifier-error: #e0bebc;
+  --background-modifier-success: #bcddbd;
+  --background-modifier-cover: rgba(51, 50, 51, 0.3);
+  --text-normal: #4b4b4b;
+  --text-muted: #616161;
+  --text-faint: #6b6b6b;
+  --text-on-accent: #f1f1f1;
+  --text-selection: rgba(111, 188, 189, 0.4);
+  --text-highlight-bg: rgba(223, 188, 114, 0.45);
+  --text-highlight-bg-active: rgba(223, 188, 114, 0.65);
+  --interactive-normal: #e9e9e9;
+  --interactive-hover: #f1f1f1;
+  --color-accent: #007173;
+  --color-accent-1: #007299;
+  --color-accent-2: #007173;
+  --color-red: #9b1300;
+  --color-red-rgb: 155, 19, 0;
+  --color-orange: #9a7200;
+  --color-orange-rgb: 154, 114, 0;
+  --color-yellow: #727100;
+  --color-yellow-rgb: 114, 113, 0;
+  --color-green: #4d704e;
+  --color-green-rgb: 77, 112, 78;
+  --color-cyan: #007173;
+  --color-cyan-rgb: 0, 113, 115;
+  --color-blue: #007299;
+  --color-blue-rgb: 0, 114, 153;
+  --color-purple: #795c79;
+  --color-purple-rgb: 121, 92, 121;
+  --color-pink: #9b1d72;
+  --color-pink-rgb: 155, 29, 114;
+  --seoul-title: #61603f;
+  --seoul-heading: #875f5e;
+  --seoul-comment: #4d704e;
+  --seoul-number: #9a7372;
+  --seoul-function: #727100;
+  --seoul-operator: #9a7372;
+  --seoul-tag-bg: rgba(77, 112, 78, 0.07);
+  --seoul-active-bg: rgba(0, 113, 115, 0.09);
+}
+
+body.theme-dark,
+body.theme-light {
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: var(--color-red);
+  --text-success: var(--color-green);
+  --text-warning: var(--color-orange);
+  --background-modifier-active-hover: var(--seoul-active-bg);
+  --file-line-width: 740px;
+  --line-height-normal: 1.65;
+  --heading-spacing: 1.8em;
+  --h1-color: var(--seoul-heading);
+  --h2-color: var(--seoul-heading);
+  --h3-color: var(--seoul-heading);
+  --h4-color: var(--seoul-heading);
+  --h5-color: var(--seoul-heading);
+  --h6-color: var(--seoul-heading);
+  --h1-size: 1.85em;
+  --h2-size: 1.45em;
+  --h3-size: 1.2em;
+  --h4-size: 1.08em;
+  --h5-size: 1em;
+  --h6-size: 1em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --inline-title-color: var(--seoul-heading);
+  --inline-title-size: 2.1em;
+  --inline-title-weight: 600;
+  --bold-color: var(--seoul-title);
+  --italic-color: var(--color-purple);
+  --link-color: var(--color-cyan);
+  --link-color-hover: var(--color-blue);
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-cyan);
+  --link-unresolved-color: var(--color-purple);
+  --link-unresolved-opacity: 1;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-decoration: underline;
+  --tag-color: var(--color-green);
+  --tag-color-hover: var(--color-cyan);
+  --tag-background: var(--seoul-tag-bg);
+  --tag-background-hover: var(--seoul-active-bg);
+  --tag-border-width: 0;
+  --tag-radius: 4px;
+  --tag-size: 0.85em;
+  --blockquote-border-color: var(--color-green);
+  --blockquote-border-thickness: 2px;
+  --blockquote-color: var(--text-muted);
+  --blockquote-background-color: var(--seoul-tag-bg);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--seoul-comment);
+  --code-function: var(--seoul-function);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-operator: var(--seoul-operator);
+  --code-property: var(--color-blue);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--seoul-number);
+  --checkbox-color: var(--color-green);
+  --checkbox-color-hover: var(--color-cyan);
+  --checkbox-border-color: var(--text-faint);
+  --checkbox-marker-color: var(--background-primary);
+  --checklist-done-color: var(--text-faint);
+  --list-marker-color: var(--color-green);
+  --list-marker-color-collapsed: var(--color-orange);
+  --indentation-guide-color: var(--background-modifier-border);
+  --hr-color: var(--background-modifier-border);
+  --table-header-background: var(--background-primary-alt);
+  --table-header-color: var(--seoul-title);
+  --table-border-color: var(--background-modifier-border);
+  --table-row-alt-background: var(--background-modifier-hover);
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-active: var(--color-cyan);
+  --nav-item-background-active: var(--seoul-active-bg);
+  --nav-item-weight-active: 600;
+  --nav-collapse-icon-color: var(--text-faint);
+  --nav-indentation-guide-color: var(--background-modifier-border);
+  --tab-text-color-active: var(--seoul-title);
+  --tab-text-color-focused-active: var(--seoul-title);
+  --tab-text-color-focused-active-current: var(--seoul-title);
+  --tab-background-active: var(--background-primary);
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --status-bar-background: var(--background-secondary);
+  --status-bar-text-color: var(--text-faint);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--color-cyan);
+  --icon-color-active: var(--color-cyan);
+  --icon-color-focused: var(--color-cyan);
+  --graph-line: var(--background-modifier-border-hover);
+  --graph-node: var(--color-cyan);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-focused: var(--color-yellow);
+  --graph-node-tag: var(--color-green);
+  --graph-node-attachment: var(--color-purple);
+  --canvas-color: var(--color-cyan-rgb);
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --input-radius: 4px;
+}
+
+.inline-title { letter-spacing: -0.025em; }
+
+.markdown-rendered :is(h1, h2),
+.markdown-source-view.mod-cm6 :is(.HyperMD-header-1, .HyperMD-header-2) {
+  letter-spacing: -0.015em;
+}
+
+.markdown-rendered a { text-underline-offset: 0.18em; }
+
+.markdown-rendered pre {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.markdown-rendered blockquote { padding: 0.6em 1em; }
+
+.callout {
+  border-radius: 4px;
+  border: 0;
+  border-inline-start: 2px solid rgba(var(--callout-color), 0.7);
+  --callout-title-weight: 600;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  text-decoration: underline;
+  text-decoration-color: var(--color-cyan);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.markdown-source-view.mod-cm6 .cm-active.cm-line:not(.HyperMD-codeblock) {
+  background-color: var(--background-modifier-hover);
+}
+
+body:not(.is-mobile) .nav-folder-title {
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  body.theme-dark,
+  body.theme-light {
+    --inline-title-size: 1.75em;
+    --h1-size: 1.6em;
+    --h2-size: 1.3em;
+  }
+}
